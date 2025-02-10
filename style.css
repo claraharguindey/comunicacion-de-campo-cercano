@@ -57,12 +57,13 @@ nav ul {
 
 header nav ul li {
   margin: 0 15px;
-  background-color:  #d9d9d9;
 }
 
-header nav ul li a {
+header nav ul li a,
+.nav-bottom a {
   color: #000;
   text-decoration: none;
+  background-color: #fdfd96;
 }
 
 header nav ul li a:hover {
@@ -354,9 +355,6 @@ button:hover {
   border-top: 1px solid black; 
 }  
 
-.nav-bottom a {
-  text-decoration: none;
-}
 @media (max-width: 768px) {
   .poem-container {
     padding-bottom: 30px;
