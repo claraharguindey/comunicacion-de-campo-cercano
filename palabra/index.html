@@ -54,14 +54,74 @@ Esteríbar coordinado por Desmusea para CIVICAN">
         </nav>
         <div class="header-line"></div>
     </header>
-    <main>
-        <div class="grid-container">
-            <script>
-                for (let i = 1; i <= 17; i++) {
-                    document.write(`<div class="grid-item"><img src="./img/img${i}.jpg" alt="Imagen ${i}"></div>`);
-                }
-            </script>
+    <main class="palabra">
+
+        <div class="slider-container">
+            <button class="button prev" onclick="moveSlide(-1, 'slider1')">&#x27F5;</button>
+            <div class="slider" id="slider1">
+                <script>
+                    let slider1 = document.getElementById("slider1");
+                    for (let i = 1; i <= 22; i++) {
+                        let img = document.createElement("img");
+                        img.src = `./img/escritura/original/poemas${i}.jpg`;
+                        img.alt = `Imagen ${i}`;
+                        slider1.appendChild(img);
+                    }
+                </script>
+            </div>
+            <button class="button next" onclick="moveSlide(1, 'slider1')">&#x27F6;</button>
         </div>
+
+        <div class="slider-container">
+            <button class="button prev" onclick="moveSlide(-1, 'slider2')">&#x27F5;</button>
+            <div class="slider" id="slider2">
+                <script>
+                    let slider2 = document.getElementById("slider2");
+                    for (let i = 1; i <= 17; i++) {
+                        let img = document.createElement("img");
+                        img.src = `./img/escritura/poemas${i}.jpg`;
+                        img.alt = `Imagen ${i}`;
+                        slider2.appendChild(img);
+                    }
+                </script>
+            </div>
+            <button class="button next" onclick="moveSlide(1, 'slider2')">&#x27F6;</button>
+        </div>
+
+        <script>
+            let index1 = 0;
+            let index2 = 0;
+
+            function moveSlide(step, sliderId) {
+                const slider = document.getElementById(sliderId);
+                const images = slider.querySelectorAll("img");
+                const totalImages = images.length;
+
+                if (sliderId === 'slider1') {
+                    index1 += step;
+                    if (index1 >= totalImages) index1 = 0;
+                    if (index1 < 0) index1 = totalImages - 1;
+                    slider.style.transform = `translateX(${-index1 * 100}%)`;
+                } else if (sliderId === 'slider2') {
+                    index2 += step;
+                    if (index2 >= totalImages) index2 = 0;
+                    if (index2 < 0) index2 = totalImages - 1;
+                    slider.style.transform = `translateX(${-index2 * 100}%)`;
+                }
+            }
+
+            function autoSlide1() {
+                moveSlide(1, 'slider1');
+            }
+            function autoSlide2() {
+                moveSlide(1, 'slider2');
+            }
+            setInterval(autoSlide1, 5000);
+            setInterval(autoSlide2, 4000);
+
+
+        </script>
     </main>
 </body>
+
 </html>

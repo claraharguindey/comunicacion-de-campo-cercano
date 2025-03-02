@@ -12,16 +12,16 @@
   font-style: italic;
 }
 
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   color: black;
 }
 
 body {
   font-family: serif;
-  margin: 0;
-  padding: 0;
-  color: #000;
   background-color: #d9d9d9;
   padding: 24px;
 }
@@ -190,14 +190,8 @@ p.logo-text {
 button {
   margin-right: 5px;
   margin-bottom: 5px;
-  background: white;
   border: 1px solid black;
   cursor: pointer;
-}
-
-button:hover {
-  background: black;
-  color: white;
 }
 
 #poem {
@@ -329,6 +323,10 @@ button:hover {
   margin: 15px;
 }
 
+.palabra {
+  display: flex;
+}
+
 @keyframes blink {
   0% {
     fill: rgba(233, 30, 30, 0.3);
@@ -352,8 +350,8 @@ button:hover {
 }
 
 .nav-bottom {
-  border-top: 1px solid black; 
-}  
+  border-top: 1px solid black;
+}
 
 @media (max-width: 768px) {
   .poem-container {
@@ -437,5 +435,45 @@ button:hover {
 
   .images-wrapper img {
     width: 100%;
+    object-fit: fill;
   }
+}
+
+.slider-container {
+  position: relative;
+  width: 30%;
+  max-width: 600px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+  border: 1px solid black;
+}
+
+
+.button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
 }
