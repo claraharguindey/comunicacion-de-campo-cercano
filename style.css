@@ -12,7 +12,6 @@
   font-style: italic;
 }
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -24,6 +23,7 @@ body {
   font-family: serif;
   background-color: #d9d9d9;
   padding: 24px;
+  padding-bottom: 0;
 }
 
 html.a-fullscreen body {
@@ -319,38 +319,9 @@ button {
   display: none;
 }
 
-.rio-instructions {
-  margin: 15px;
-}
-
-.palabra {
-  display: flex;
-}
-
-@keyframes blink {
-  0% {
-    fill: rgba(233, 30, 30, 0.3);
-  }
-  25% {
-    fill: rgba(233, 30, 30, 0);
-  }
-  50% {
-    fill: rgba(233, 30, 30, 0.3);
-  }
-  75% {
-    fill: rgba(233, 30, 30, 0);
-  }
-  100% {
-    fill: rgba(233, 30, 30, 0.3);
-  }
-}
-
-.blink {
-  animation: blink 2s ease-in-out;
-}
-
 .nav-bottom {
   border-top: 1px solid black;
+  margin-top: 24px;
 }
 
 @media (max-width: 768px) {
@@ -439,41 +410,22 @@ button {
   }
 }
 
-.slider-container {
-  position: relative;
-  width: 30%;
-  max-width: 600px;
-  margin: 20px;
-  overflow: hidden;
-}
-
-.slider {
+.vinculos {
   display: flex;
-  transition: transform 0.5s ease-in-out;
 }
 
-.slider img {
+.scroll-container {
+  width: 50%;
+  height: 100vh;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+}
+
+.scroll-container img {
   width: 100%;
-  border-radius: 10px;
-  object-fit: contain;
+  display: block;
+  margin-bottom: 2px;
   border: 1px solid black;
-}
-
-
-.button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: black;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.prev {
-  left: 10px;
-}
-.next {
-  right: 10px;
+  max-width: 100%;
+  object-fit: cover;
 }
