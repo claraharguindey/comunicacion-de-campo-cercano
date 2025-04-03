@@ -1,4 +1,4 @@
-function loadImages(containerId, path, count) {
+const loadImages = (containerId, path, count) => {
   const container = document.getElementById(containerId);
   for (let i = 1; i <= count; i++) {
     let img = document.createElement("img");
@@ -8,11 +8,11 @@ function loadImages(containerId, path, count) {
   }
 }
 
-function setupInfiniteScroll(containerId, path, totalImages) {
+const setupInfiniteScroll = (containerId, path, totalImages) => {
   const container = document.getElementById(containerId);
   let index = totalImages + 1;
 
-  container.addEventListener("scroll", function () {
+  container.addEventListener("scroll",  () => {
     if (
       container.scrollTop + container.clientHeight >=
       container.scrollHeight - 50

@@ -3,7 +3,7 @@ let playBtn = document.querySelector(".play-btn");
 let progressBar = document.getElementById("progress");
 let volumeSlider = document.getElementById("volume");
 
-function togglePlay() {
+const togglePlay = () => {
   if (audio.paused) {
     audio.play();
     playBtn.innerHTML = "&#10074;&#10074;";
@@ -13,11 +13,11 @@ function togglePlay() {
   }
 }
 
-audio.ontimeupdate = function () {
+audio.ontimeupdate = () => {
   let progress = (audio.currentTime / audio.duration) * 100;
   progressBar.style.width = progress + "%";
 };
 
-function setVolume() {
+const setVolume = () => {
   audio.volume = volumeSlider.value;
 }

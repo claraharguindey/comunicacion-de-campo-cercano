@@ -279,6 +279,10 @@ audio::-webkit-media-controls-volume-slider {
   background-color: #000;
 }
 
+.video {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   body {
     flex-direction: column;
@@ -336,7 +340,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 6px;
   height: 12px;
 }
 
@@ -345,7 +349,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
+  background-color: var(--text-color);
   border-radius: 10px;
   border: 0;
 }
