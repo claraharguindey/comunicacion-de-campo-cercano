@@ -152,7 +152,7 @@ p {
   grid-template-columns: repeat(2, minmax(200px, 1fr));
   gap: var(--margin-default);
   max-width: 100%;
-  margin-top:var(--margin-default);
+  margin-top: var(--margin-default);
 }
 
 .grid-image {
@@ -309,9 +309,11 @@ audio::-webkit-media-controls-volume-slider {
     order: 1;
     left: 0;
   }
+
   .columna2 h1 {
     font-size: 32px;
   }
+
   .modal {
     width: 100%;
     height: 100%;
@@ -325,6 +327,11 @@ audio::-webkit-media-controls-volume-slider {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
 }
 
