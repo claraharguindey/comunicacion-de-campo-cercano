@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,52 +40,71 @@ Esteríbar coordinado por Desmusea para CIVICAN">
     </script>
 
     <meta name="robots" content="index, follow">
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Comunicación de Campo Cercano</a></li>
-                <!-- <li><a href="/mapa">Mapa</a></li> -->
-                <li><a href="https://desmusea.com" target="_blank">Desmusea</a></li>
-        </nav>
-        <div class="header-line"></div>
-    </header>
+    <div class="columna columna1">
+        <div>
+            <p>Sobre las antiguas escuelas rurales de Esteríbar.</p>
 
-    <main class="container">
-        <h1>Comunicación de Campo Cercano</h1>
-        <div class="main-image-container">
-            <img src="./img/texto.png" alt="">
+            <a href="https://desmusea.com" target="_blank">Desmusea
+                <svg xmlns="htta://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="16" width="16"
+                    part="svg" draggable="true">
+                    <path part="base-color" fill="currentColor"
+                        d="M 6.70 23.72 L 8.28 25.30 L 20.50 13.08 L 22.48 10.93 L 22.24 14.02 L 22.19 20.14 L 24.36 20.14 L 24.52 7.49 L 11.86 7.64 L 11.88 9.83 L 18.01 9.75 L 21.10 9.53 L 18.92 11.50 L 6.70 23.72 Z">
+                    </path>
+                </svg>
+            </a>
+            <br>
+            <a href="https://www.fundacioncajanavarra.es/cultura-y-educacion/civican" target="_blank">CIVICAN
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32" height="16" width="16"
+                    part="svg" draggable="true">
+                    <path part="base-color" fill="currentColor"
+                        d="M 6.70 23.72 L 8.28 25.30 L 20.50 13.08 L 22.48 10.93 L 22.24 14.02 L 22.19 20.14 L 24.36 20.14 L 24.52 7.49 L 11.86 7.64 L 11.88 9.83 L 18.01 9.75 L 21.10 9.53 L 18.92 11.50 L 6.70 23.72 Z">
+                    </path>
+                </svg>
+            </a>
         </div>
-        <article>
-            <h2 id="description"></h2>
-            <p>Comunicación de Campo Cercano es un programa de mediación situado en el Valle de Esteríbar. Tomando
-                como referencia algunas de las escuelas rurales que han sido parte de la historia educativa del
-                valle, (las de Zubiri, Larrasoaña, Eugui y Urdániz), el programa busca activar el entramado de
-                vínculos preexistentes entre las personas que habitan diferentes puntos de Esteríbar.
-            </p>
-            <p>
-                El programa se articula a través de cuatro encuentros presenciales donde se revisarán diferentes
-                documentaciones históricas vinculadas a estos enclaves, y se experimentará con tecnologías
-                accesibles para crear nuevos relatos colectivos sobre el valle. Los materiales resultantes de los
-                encuentros se difundirán a través de etiquetas NFC (Near Field Communication), una tecnología
-                inalámbrica que permite la transferencia de datos entre dos dispositivos cuando se encuentran a unos
-                pocos centímetros. A través de ella, generando campos cercanos, compartiremos narrativas vinculantes
-                entre las escuelas rurales y visibilizaremos aquello que, como el conocimiento, conecta las
-                diferentes comunidades del Valle.</p>
-        </article>
-        <!-- <nav class="nav-bottom">
-            <ul>
-                <li><a href="./vinculos">Vínculos</a></li>
-                <li><a href="./territorio">Territorio</a></li>
-                <li><a href="./saberes/">Saberes</a></li>
-                <li><a href="./recreo">Recreo</a></li>
-            </ul>
-        </nav> -->
-    </main>
+        <div class="image-wrapper">
+            <a href="./mapa" rel="noopener noreferrer"><img class="image" src="./img/mapa_riooesteribar.png"
+                    alt="Mapa donde se representa el río Arga y la posición de las antiguas escuelas"></a>
+        </div>
+    </div>
+    <div class="columna columna2">
+        <h1>Comunicación de Campo Cercano</h1>
+        <h2 id="description"></h2>
+        <p>Comunicación de Campo Cercano es un programa de mediación situado en el Valle de Esteríbar. Tomando
+            como referencia algunas de las escuelas rurales que han sido parte de la historia educativa del
+            valle, (las de Zubiri, Larrasoaña, Eugui y Urdániz), el programa busca activar el entramado de
+            vínculos preexistentes entre las personas que habitan diferentes puntos de Esteríbar.
+        </p>
+        <p>
+            El programa se articula a través de cuatro encuentros presenciales donde se revisarán diferentes
+            documentaciones históricas vinculadas a estos enclaves, y se experimentará con tecnologías
+            accesibles para crear nuevos relatos colectivos sobre el valle. Los materiales resultantes de los
+            encuentros se difundirán a través de etiquetas NFC (Near Field Communication), una tecnología
+            inalámbrica que permite la transferencia de datos entre dos dispositivos cuando se encuentran a unos
+            pocos centímetros. A través de ella, generando campos cercanos, compartiremos narrativas vinculantes
+            entre las escuelas rurales y visibilizaremos aquello que, como el conocimiento, conecta las
+            diferentes comunidades del Valle.</p>
+        <div class="grid">
+            <img src="./img/texto.png" onclick="openModal(this.src)">
+            <img src="./img/texto.png" onclick="openModal(this.src)">
+            <img src="./img/texto.png" onclick="openModal(this.src)">
+            <img src="./img/texto.png" onclick="openModal(this.src)">
+            <img src="./img/texto.png" onclick="openModal(this.src)">
+        </div>
+    </div>
+    <div class="columna columna3">
+        <ul class="menu">
+            <li><a href="./vinculos" rel="noopener noreferrer">❶ Zubiri</a></li>
+            <li><a href="./territorio" rel="noopener noreferrer">❷ Larrasoaña</a></li>
+            <li><a href="./saberes" rel="noopener noreferrer">❸ Eugui</a></li>
+            <li><a href="./recreo" rel="noopener noreferrer">❹ Urdániz</a></li>
+        </ul>
+        <div class="image-wrapper"><img class="image" src="./img/logos/LOGO negro fondo transparente.png" alt=""></div>
+    </div>
     <script>
         const params = new URLSearchParams(window.location.search);
         const acceso = params.get("acceso");
