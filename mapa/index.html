@@ -77,78 +77,90 @@ Esteríbar coordinado por Desmusea para CIVICAN">
             vínculos preexistentes entre las personas que habitan diferentes puntos de Esteríbar.
         </p>
         <div class="main-image-container">
-            <svg style="width: 100%; height: auto;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1000 1000">
-                <image xlink:href="./../img/mapa_riooesteribar.png"></image>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 1109">
+                <image width="100%" height="100%" xlink:href="./../img/mapa_riooesteribar.png"></image>
 
                 <!-- Área de Iragi -->
-                <a class="image-mapper-shape" xlink:title="Iragi" href="javascript:void(0)" onclick="openModal('Iragi', event)">
+                <a class="image-mapper-shape" xlink:title="Iragi" href="javascript:void(0)"
+                    onclick="openModal('iragi', event)">
                     <rect x="196" y="160" width="43" height="45"></rect>
                 </a>
 
                 <!-- Área de Eugi -->
-                <a class="image-mapper-shape" xlink:title="Eugi" href="javascript:void(0)" onclick="openModal('Eugi', event)">
+                <a class="image-mapper-shape" xlink:title="Eugi" href="javascript:void(0)"
+                    onclick="openModal('eugi', event)">
                     <rect x="404" y="91" width="48" height="58"></rect>
                 </a>
 
                 <!-- Área de Sarasíbar -->
-                <a class="image-mapper-shape" xlink:title="Sarasíbar" href="javascript:void(0)" onclick="openModal('Sarasíbar', event)">
+                <a class="image-mapper-shape" xlink:title="Sarasíbar" href="javascript:void(0)"
+                    onclick="openModal('sarasibar', event)">
                     <rect x="84" y="616" width="50" height="50"></rect>
                 </a>
 
                 <!-- Área de Irotz -->
-                <a class="image-mapper-shape" xlink:title="Irotz" href="javascript:void(0)" onclick="openModal('Irotz', event)">
+                <a class="image-mapper-shape" xlink:title="Irotz" href="javascript:void(0)"
+                    onclick="openModal('irotz', event)">
                     <rect x="82" y="899" width="49" height="60"></rect>
                 </a>
 
                 <!-- Área de Ilurdotz -->
-                <a class="image-mapper-shape" xlink:title="Ilurdotz" href="javascript:void(0)" onclick="openModal('Ilurdotz', event)">
+                <a class="image-mapper-shape" xlink:title="Ilurdotz" href="javascript:void(0)"
+                    onclick="openModal('ilurdotz', event)">
                     <rect x="229" y="807" width="62" height="58"></rect>
                 </a>
 
                 <!-- Área de Errea -->
-                <a class="image-mapper-shape" xlink:title="Errea" href="javascript:void(0)" onclick="openModal('Errea', event)">
+                <a class="image-mapper-shape" xlink:title="Errea" href="javascript:void(0)"
+                    onclick="openModal('errea', event)">
                     <rect x="497" y="675" width="62" height="61"></rect>
                 </a>
 
                 <!-- Área de Urtasun -->
-                <a class="image-mapper-shape" xlink:title="Urtasun" href="javascript:void(0)" onclick="openModal('Urtasun', event)">
+                <a class="image-mapper-shape" xlink:title="Urtasun" href="javascript:void(0)"
+                    onclick="openModal('urtasun', event)">
                     <rect x="306" y="329" width="51" height="51"></rect>
                 </a>
 
                 <!-- Área de Larrasoaña -->
-                <a class="image-mapper-shape" xlink:title="Larrasoaña" href="javascript:void(0)" onclick="openModal('Larrasoaña', event)">
+                <a class="image-mapper-shape" xlink:title="Larrasoaña" href="javascript:void(0)"
+                    onclick="openModal('larrasoana', event)">
                     <rect x="227" y="616" width="56" height="58"></rect>
                 </a>
 
                 <!-- Área de Angorreta -->
-                <a class="image-mapper-shape" xlink:title="Angorreta" href="javascript:void(0)" onclick="openModal('Angorreta', event)">
+                <a class="image-mapper-shape" xlink:title="Angorreta" href="javascript:void(0)"
+                    onclick="openModal('angorreta', event)">
                     <rect x="500" y="313" width="48" height="46"></rect>
                 </a>
 
                 <!-- Área de Urdániz -->
-                <a class="image-mapper-shape" xlink:title="Urdániz" href="javascript:void(0)" onclick="openModal('Urdániz', event)">
+                <a class="image-mapper-shape" xlink:title="Urdániz" href="javascript:void(0)"
+                    onclick="openModal('urdaniz', event)">
                     <rect x="317" y="542" width="58" height="60"></rect>
                 </a>
 
                 <!-- Área de Leranotz -->
-                <a class="image-mapper-shape" xlink:title="Leranotz" href="javascript:void(0)" onclick="openModal('Leranotz', event)">
+                <a class="image-mapper-shape" xlink:title="Leranotz" href="javascript:void(0)"
+                    onclick="openModal('leranotz', event)">
                     <rect x="352" y="200" width="74" height="55"></rect>
                 </a>
 
                 <!-- Área de Zuribi -->
-                <a class="image-mapper-shape" xlink:title="Zuribi" href="javascript:void(0)" onclick="openModal('Zuribi', event)">
+                <a class="image-mapper-shape" xlink:title="Zubiri" href="javascript:void(0)"
+                    onclick="openModal('zubiri', event)">
                     <rect x="421" y="408" width="61" height="52"></rect>
                 </a>
             </svg>
 
-            <div id="myModal" class="modal">
+            <div id="modal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal()">&times;</span>
-                    <h2 id="modalTitle"></h2>
-                    <p>Contenido del área seleccionada.</p>
+                    <h4 id="modalTitle" class="modal-title"></h4>
+                    <img id="modalImage" class="modal-image">
                 </div>
             </div>
-        
+
         </div>
     </div>
     <div class="columna columna3">
