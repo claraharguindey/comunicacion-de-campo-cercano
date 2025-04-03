@@ -245,7 +245,7 @@ p {
 }
 
 .image-mapper-shape {
-  fill: rgba(4, 4, 4, 0.48);
+  fill: transparent;
 }
 
 .reproductor {
