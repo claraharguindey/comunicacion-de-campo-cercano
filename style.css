@@ -133,7 +133,8 @@ p {
   align-items: flex-end;
 }
 
-.image-wrapper {
+.image-wrapper,
+.logo-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,6 +337,19 @@ audio::-webkit-media-controls-volume-slider {
   .grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
+
+  .image-wrapper {
+    margin-top: var(--margin-default);
+    margin-bottom: 0;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    width: 200px;
   }
 }
 
