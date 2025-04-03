@@ -48,6 +48,11 @@ a:visited {
   color: var(--text-color);
 }
 
+.back-button {
+  display: inline-block;
+  margin-bottom: var(--padding-default);
+}
+
 .columna {
   padding: var(--padding-default);
   margin: 0 var(--margin-default);
