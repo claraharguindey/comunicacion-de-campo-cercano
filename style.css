@@ -225,6 +225,17 @@ p {
   max-width: 300px;
 }
 
+.modal-description {
+  margin-top: 12px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.modal-description a {
+  text-decoration: underline;
+  color: white;
+}
+
 .modal-content {
   background-color: black;
   padding: 20px;
@@ -236,7 +247,8 @@ p {
 .close {
   color: var(--bg-light);
   float: right;
-  font-size: 28px;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 .close:hover,
@@ -334,7 +346,7 @@ audio::-webkit-media-controls-volume-slider {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
   }
 
   .modal-image {
