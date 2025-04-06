@@ -359,6 +359,13 @@ audio::-webkit-media-controls-volume-slider {
   .logo {
     width: 200px;
   }
+
+  .a-canvas {
+    width: 100% !important;
+    height: 100% !important;
+    position: relative !important;
+    aspect-ratio: 4 / 3 !important;
+  }
 }
 
 ::-webkit-scrollbar {
