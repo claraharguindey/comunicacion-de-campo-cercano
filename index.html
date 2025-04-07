@@ -127,23 +127,10 @@ Esteríbar coordinado por Desmusea para CIVICAN">
         </ul>
         <div class="logo-wrapper"><img class="image logo" src="./img/logos/logo.png" alt=""></div>
     </div>
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const acceso = params.get("acceso");
-
-        const contenidos = {
-            "zubiri": { description: "<p>Has accedido desde Zubiri. Puedes los resultados de tu sesión, <a style='text-decoration:underline;' href='./zubiri' rel='noopener noreferrer'>aquí</a>.<p>" },
-            "larrasoana": { description: "Has accedido desde Larrasoaña. Puedes los resultados de tu sesión, <a style='text-decoration:underline;' href='./larrasoana' rel='noopener noreferrer'>aquí</a>.<p>" },
-            "eugi": { description: "Has accedido desde Eugi. Puedes los resultados de tu sesión, <a style='text-decoration:underline;' href='./eugui' rel='noopener noreferrer'>aquí</a>.<p>" },
-            "urdaniz": { description: "Has accedido desde Urdaniz. Puedes los resultados de tu sesión, <a style='text-decoration:underline;' href='./urdaniz' rel='noopener noreferrer'>aquí</a>.<p>" },
-        };
-
-        if (contenidos[acceso]) {
-            document.getElementById("description").innerHTML = contenidos[acceso].description;
-        } else {
-            document.getElementById("contenido").innerText = "Pronto compartiremos los resultados del encuentro";
-        }
-    </script>
+    <div id="image-modal">
+        <img id="modal-img" src="" alt="Vista ampliada">
+    </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
