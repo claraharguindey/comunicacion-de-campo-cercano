@@ -61,7 +61,8 @@ const openModal = (areaName, event) => {
     zubiri: {
       title: "Zuribi",
       description: `En Zubiri había cuatro edificios de escuelas:
-                        <br>Zubiri I <a href="https://www.google.es/maps/place/42%C2%B055'48.0%22N+1%C2%B030'09.9%22W" target="_blank">${arrow}</a>: actual Casa Apolonia.
+                        <br>Zubiri I: actual Casa Apolonia <a href="https://www.google.es/maps/place/42%C2%B055'48.0%22N+1%C2%B030'09.9%22W" target="_blank">${arrow}</a>. Actualmente almacén del Concejo. Hay un proyecto
+de Casa de Cultura en marcha.
                         <br>Zubiri II <a href="https://www.google.es/maps/place/42%C2%B056'04.1%22N+1%C2%B030'12.1%22W" target="_blank">${arrow}</a>: ahora almacén del Economato.
                         <br>Zubiri III: obrador de Embutidos Arrieta.
                         <br>Zubiri IV <a href="https://www.google.com/maps?cid=13351277653292910928" target="_blank">${arrow}</a>: Albergue municipal de peregrinos.`,
