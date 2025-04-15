@@ -244,6 +244,10 @@ p {
   text-decoration: underline;
 }
 
+a svg {
+  vertical-align: text-bottom;
+}
+
 .modal-content {
   border: 1px solid black;
   width: auto;

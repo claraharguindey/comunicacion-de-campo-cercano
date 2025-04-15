@@ -8,65 +8,68 @@ const openModal = (areaName, event) => {
   const lugares = {
     iragi: {
       title: "Iragi",
-      description: `Sin información <a href="https://www.google.com/maps/place/42%C2%B058\`05.2%22N+1%C2%B032\`45.7%22W/@42.96812,-1.5486149,17z" target="_blank">${arrow}</a>`,
+      description: `La antigua escuela actualmente es <a href="https://www.google.com/maps/place/42%C2%B058'07.4%22N+1%C2%B032'45.2%22W/@42.968723,-1.5465447,19z" target="_blank"> una vivienda particular ${arrow}</a>.`,
       image: "./images/iragi.jpg",
     },
     eugi: {
       title: "Eugi",
-      description: `La antigua escuela mixta se encontraba en lo que es ahora el <a href="https://www.google.com/maps/place/42%C2%B058\`43.1%22N+1%C2%B030\`38.7%22W" target="_blank">Centro Cívico ${arrow}</a>. El edificio de las antiguas escuelas de chicas se encuentra en desuso.`,
+      description: `<a href="https://www.google.com/maps/place/42%C2%B058'43.1%22N+1%C2%B030'38.7%22W/@42.97863,-1.5133249,17z" target="_blank">La antigua escuela mixta ${arrow}</a> se encontraba en lo que es ahora el Centro Cívico, en la segunda planta de un edificio. En la primera se encuentra el Centro Olondo/museo (antes casa del maestro) y en la planta baja está la ludoteca/sala polivalente. <a href="https://www.google.com/maps/place/42%C2%B058'44.5%22N+1%C2%B030'43.9%22W/@42.97902,-1.5147649,17z" target="_blank"> El edificio de las antiguas escuelas de chicas ${arrow}</a> se encuentra en desuso .`,
       image: "./images/eugi.png",
     },
     sarasibar: {
       title: "Sarasíbar",
-      description: `Se encontraba en la Casa Abadía <a href="https://www.google.com/maps?q=Calle+Sta.+Elodia,+19,+31698+Saras%C3%ADbar,+Navarra" target="_blank">${arrow}</a>, pegada a la iglesia; hoy casa particular.`,
+      description: `Se encontraba en <a href="https://www.google.com/maps?q=Calle+Sta.+Elodia,+19,+31698+Saras%C3%ADbar,+Navarra" target="_blank">la Casa Abadía ${arrow}</a>, pegada a la iglesia; hoy casa particular.`,
       image: "./images/sarasibar.png",
     },
     irotz: {
       title: "Irotz",
-      description: `Hoy vivienda particular y escuela de yoga <a href="https://www.google.com/maps/place/42%C2%B051\`36.7%22N+1%C2%B034\`27.8%22W" target="_blank">${arrow}</a>.`,
+      description: `Hoy vivienda particular <a href="https://www.google.com/maps/place/42%C2%B051'36.7%22N+1%C2%B034'27.8%22W" target="_blank">y escuela de yoga ${arrow}</a>.`,
       image: "./images/irotz.jpg",
     },
     ilurdotz: {
       title: "Ilurdotz",
-      description: `Estuvo en Casa Palacio y luego en la casa parroquial hasta su cierre en los 80 <a href="https://www.google.com/maps/place/Calle+Ntra.+Sra.+del+Rosario,+10,+31699+Il%C3%BArdotz,+Navarra" target="_blank">${arrow}</a>.`,
+      description: `Hasta los años 50, la escuela estuvo en Casa Palacio (se ubicaba en el solar donde hoy está la plaza y la sociedad, el edificio ya no existe), y después en la casa parroquial hasta que se cerró en los años 80 (hoy en día, <a href="https://www.google.com/maps/place/Calle+Ntra.+Sra.+del+Rosario,+10,+31699+Il%C3%BArdotz,+Navarra" target="_blank">esta pertenece a la Diócesis y está alquilada)${arrow}</a>.`,
     },
     errea: {
       title: "Errea",
-      description: `Era la antigua casa parroquial. Después se daban clases en casas particulares <a href="https://www.google.com/maps?q=31698+Errea,+Navarra" target="_blank">${arrow}</a>.`,
+      description: `El edificio ya no existe. Actualmente en el lugar, está situado <a href="https://www.google.es/maps/@42.8926577,-1.4907005,19z" target="_blank"> el monumento al quitanieves ${arrow}</a>. Cuando el edificio desapareció, las clases continuaron cada año en una casa diferente del pueblo.`,
     },
     urtasun: {
       title: "Urtasun",
-      description: `Las escuelas estaban junto a la casa del cura, hoy desaparecidas. Ahora hay una rotonda <a href="https://www.google.es/maps/place/42%C2%B057\`50.0%22N+1%C2%B030\`57.5%22W" target="_blank">${arrow}</a>.`,
+      description: `Las escuelas estaban junto a la casa del cura, junto a la Iglesia. Ahora no existe ni la escuela ni la casa del cura, <a href="https://www.google.es/maps/place/42%C2%B057'50.0%22N+1%C2%B030'57.5%22W/@42.9639,-1.5185349,571m" target="_blank">sólo una rotonda ${arrow}</a>.`,
       image: "./images/urtasun.png",
     },
     larrasoana: {
       title: "Larrasoaña",
-      description: `Actualmente la escuela se usa como sociedad, albergue, sala del concejo y vivienda <a href="https://www.google.com/maps?cid=8283116057037928730" target="_blank">${arrow}</a>.`,
+      description: `Actualmente la escuela se usa como <a href="https://www.google.com/maps?cid=8283116057037928730" target="_blank">sociedad, albergue, sala del concejo y vivienda ${arrow}</a>.`,
       image: "./images/larrasoana.png",
     },
     angorreta: {
       title: "Angorreta",
-      description: `Las antiguas escuelas estaban en la actual Casa Siricu <a href="https://www.google.com/maps/place/C.+San+Gil,+9,+31639+Agorreta,+Navarra" target="_blank">${arrow}</a>. Hoy es vivienda particular.`,
+      description: `Las antiguas escuelas estaban en la actual Casa Siricu <a href="https://www.google.com/maps/place/C.+San+Gil,+9,+31639+Agorreta,+Navarra" target="_blank">${arrow}</a>. Hoy es una vivienda particular. Los habitantes de Agorreta comentan que han escuchado a sus antepasados que también, anteriormente, hubo otra escuela que estaba en la casa pegada al cementerio. Y hoy en día esta casa existe y es vivienda particular.`,
     },
     urdaniz: {
       title: "Urdániz",
-      description: `La antigua escuela es actualmente sociedad del pueblo <a href="https://www.google.com/maps/place/Calle+San+Miguel,+19,+31698+Urd%C3%A1niz,+Navarra" target="_blank">${arrow}</a>.`,
+      description: `La antigua escuela es actualmente <a href="https://www.google.com/maps/place/Calle+San+Miguel,+19,+31698+Urd%C3%A1niz,+Navarra" target="_blank">sociedad del pueblo ${arrow}</a>.`,
       image: "./images/urdaniz.jpg",
     },
     leranotz: {
       title: "Leranotz",
-      description: `El edificio de escuelas se usa actualmente como espacio de usos múltiples <a href="https://www.google.com/maps?q=C.+San+Adri%C3%A1n,+21,+31639+Leranotz,+Navarra" target="_blank">${arrow}</a>.`,
+      description: `La antigua escuela actualmente es <a href="https://www.google.com/maps/place/C.+San+Adri%C3%A1n,+21,+31639+Leranotz,+Navarra" target="_blank">una vivienda particular ${arrow}</a>.`,
       image: "./images/leranotz.jpg",
     },
     zubiri: {
-      title: "Zuribi",
+      title: "Zubiri",
       description: `En Zubiri había cuatro edificios de escuelas:
-                        <br>Zubiri I: actual Casa Apolonia <a href="https://www.google.es/maps/place/42%C2%B055'48.0%22N+1%C2%B030'09.9%22W" target="_blank">${arrow}</a>. Actualmente almacén del Concejo. Hay un proyecto
-de Casa de Cultura en marcha.
-                        <br>Zubiri II <a href="https://www.google.es/maps/place/42%C2%B056'04.1%22N+1%C2%B030'12.1%22W" target="_blank">${arrow}</a>: ahora almacén del Economato.
-                        <br>Zubiri III: obrador de Embutidos Arrieta.
-                        <br>Zubiri IV <a href="https://www.google.com/maps?cid=13351277653292910928" target="_blank">${arrow}</a>: Albergue municipal de peregrinos.`,
+      <br>Zubiri I: actual Casa Apolonia. Actualmente almacén del Concejo. Hay un proyecto de Casa de Cultura en marcha.
+      <br>Zubiri II: ahora almacén del Economato.
+      <br>Zubiri III: actualmente <a href="https://www.google.es/maps/place/42%C2%B055'46.1%22N+1%C2%B030'14.7%22W" target="_blank">obrador de Embutidos Arrieta ${arrow}</a>.
+      <br>Zubiri IV: actualmente <a href="https://www.google.com/maps?cid=13351277653292910928" target="_blank">albergue municipal de peregrinos  ${arrow}</a>.`,
       image: "./images/zubiri.jpg",
+    },
+    imbuluzketa: {
+      title: "Imbuluzketa",
+      description: `La antigua escuela estaba ubicada en la casa parroquial, junto a la Iglesia. El edificio <a href="https://www.google.com/maps/place/Iglesia+Parroquial+de+San+Mart%C3%ADn/@42.9245441,-1.5401978,15z" target="_blank">todavía existe ${arrow}</a>.`,
     },
   };
 
