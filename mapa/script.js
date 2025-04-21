@@ -44,8 +44,8 @@ const openModal = (areaName, event) => {
       description: `Actualmente la escuela se usa como <a href="https://www.google.com/maps?cid=8283116057037928730" target="_blank">sociedad, albergue, sala del concejo y vivienda ${arrow}</a>.`,
       image: "./images/larrasoana.png",
     },
-    angorreta: {
-      title: "Angorreta",
+    agorreta: {
+      title: "Agorreta",
       description: `Las antiguas escuelas estaban en la actual Casa Siricu <a href="https://www.google.com/maps/place/C.+San+Gil,+9,+31639+Agorreta,+Navarra" target="_blank">${arrow}</a>. Hoy es una vivienda particular. Los habitantes de Agorreta comentan que han escuchado a sus antepasados que también, anteriormente, hubo otra escuela que estaba en la casa pegada al cementerio. Y hoy en día esta casa existe y es vivienda particular.`,
     },
     urdaniz: {
