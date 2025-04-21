@@ -46,7 +46,7 @@ const openModal = (areaName, event) => {
     },
     agorreta: {
       title: "Agorreta",
-      description: `La antigua escuela estaba ubicada en la actual casa Siricu, <a href="https://www.google.com/maps/place/C.+San+Gil,+9,+31639+Agorreta,+Navarra" target="_blank">actualmente es una vivienda particular ${arrow}.</a>. Los habitantes de Agorreta comentan, que han escuchado a sus antepasados que anteriormente, hubo otra escuela cerca del cementerio. Hoy en día esta casa existe <a href="https://maps.app.goo.gl/8odbob47HvcME8rbA" target="_blank">y es una vivienda particular ${arrow}.</a>`,
+      description: `La antigua escuela estaba ubicada en la actual casa Siricu, <a href="https://www.google.com/maps/place/C.+San+Gil,+9,+31639+Agorreta,+Navarra" target="_blank">actualmente es una vivienda particular ${arrow}</a>. Los habitantes de Agorreta comentan, que han escuchado a sus antepasados que anteriormente, hubo otra escuela cerca del cementerio. Hoy en día esta casa existe <a href="https://maps.app.goo.gl/8odbob47HvcME8rbA" target="_blank">y es una vivienda particular ${arrow}</a>.`,
     },
     urdaniz: {
       title: "Urdániz",
